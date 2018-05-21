@@ -19,5 +19,8 @@ Route::post('/login', 'AutenticacionController@login');
 Route::middleware(['auth'])->group(function()
 {
     Route::get('/', function () { return view('aplicacion.portada.index'); });
+
+    Route::get('/cargar', function () { return view('aplicacion.cargar.index'); });
+
     Route::get('/logout', 'AutenticacionController@logout');
 });
