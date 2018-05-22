@@ -9,7 +9,7 @@
     </ol>
 </nav>
 
-{!! Form::open(array('url' => 'cargar_evaluacion/guardar', 'method' => 'post', 'files' => true)) !!}
+{!! Form::open(array('url' => 'cargar/cargar', 'method' => 'post', 'files' => true)) !!}
     
 <div class="card">
     <div class="card-header">
@@ -37,7 +37,7 @@
     </div>
     <div class="card-footer text-right">
         <button type="submit" class="btn btn-success">Guardar <i class="fas fa-check-circle"></i></button>
-        <a href="/evaluaciones" class="btn btn-danger">Cancelar <i class="fas fa-times-circle"></i></a>
+        <a href="/cargar" class="btn btn-danger">Cancelar <i class="fas fa-times-circle"></i></a>
     </div>
 
 </div>
