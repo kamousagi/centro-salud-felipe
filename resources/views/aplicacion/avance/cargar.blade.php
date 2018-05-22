@@ -3,12 +3,6 @@
 
 @section('content')
 
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item active" aria-current="page">Cargar</li>
-    </ol>
-</nav>
-
 {!! Form::open(array('url' => 'cargar/cargar', 'method' => 'post', 'files' => true)) !!}
     
 <div class="card">

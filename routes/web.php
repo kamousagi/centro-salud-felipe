@@ -20,8 +20,8 @@ Route::middleware(['auth'])->group(function()
 {
     Route::get('/', function () { return view('aplicacion.portada.index'); });
 
-    Route::get('/cargar/cargar', function () { return view('aplicacion.cargar.cargar'); });
-    Route::post('/cargar/cargar', 'CargarController@postCargar');
+    Route::get('/avance', function () { return view('aplicacion.avance.index'); });
+    Route::post('/avance/importar', 'AvanceController@postImportar');
 
     Route::get('/logout', 'AutenticacionController@logout');
 });
